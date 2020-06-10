@@ -24,3 +24,6 @@ Homestead.json
 
 # Idea
 .idea
+
+# Truffle
+truffle/build
