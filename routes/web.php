@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::namespace('Backend')
+    ->name('backend.')
+    ->group(function () {
+        Route::get('/', 'EthereumController@account')->name('account');
+    });
