@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::namespace('Backend')
-    ->name('backend.')
-    ->group(function () {
-        Route::get('/', 'EthereumController@account')->name('account');
-    });
+Route::get('/', function () {
+    return view('welcome');
+});
